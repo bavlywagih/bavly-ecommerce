@@ -1,12 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 Bavly Ecommerce
 
-## Getting Started
+A modern and responsive e-commerce web application built with **Next.js, React, and TypeScript**.
 
-First, run the development server:
+This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and is currently under development.
+
+---
+
+## ✨ Features
+
+- 🛍️ Modern e-commerce interface
+- 📱 Fully responsive design
+- ⚡ Fast and optimized with Next.js
+- 🎨 Clean and modern user interface
+- 🧩 Reusable React components
+- 🔍 SEO-friendly structure
+- 📦 Organized product architecture
+- 🚀 Production-ready Next.js structure
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **JavaScript**
+- **CSS**
+- **next/font**
+
+---
+
+## 📁 Project Structure
+
+```text
+bavly-ecommerce/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── ...
+│
+├── component/
+│   └── header/
+│
+├── public/
+│   └── img/
+│
+├── package.json
+├── package-lock.json
+├── next.config.ts
+├── tsconfig.json
+├── eslint.config.mjs
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/bavlywagih/bavly-ecommerce.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd bavly-ecommerce
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
+```
+
+You can also use:
+
+```bash
 yarn dev
 # or
 pnpm dev
@@ -14,23 +91,110 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✏️ Development
 
-## Learn More
+You can start editing the application by modifying:
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/page.tsx
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The page automatically updates as you edit the source code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔧 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev
+```
+
+Runs the development server.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+Creates an optimized production build.
+
+### Production Server
+
+```bash
+npm start
+```
+
+Runs the application in production mode.
+
+### Lint
+
+```bash
+npm run lint
+```
+
+Checks the project for code-quality and linting issues.
+
+---
+
+## 🎨 Fonts
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) for automatic font optimization and loading.
+
+---
+
+## 🌐 Deployment
+
+The easiest way to deploy this Next.js application is using **Vercel**, the platform created by the team behind Next.js.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+For more information, check the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+---
+
+## 📚 Learn More
+
+To learn more about the technologies used in this project:
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [React Documentation](https://react.dev/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
+You can also check the [Next.js GitHub repository](https://github.com/vercel/next.js).
+
+---
+
+## 👨‍💻 Author
+
+### Bavly Wagih
+
+Frontend Developer & Programmer
+
+- GitHub: [@bavlywagih](https://github.com/bavlywagih)
+- LinkedIn: [Bavly Wagih](https://www.linkedin.com/in/bavly-wagih-0a5042366)
+
+---
+
+## 📌 Project Status
+
+🚧 **Currently under development**
+
+New features and improvements will be added continuously.
+
+---
+
+⭐ If you like this project, consider giving it a **Star** on GitHub.
+
+---
+
+## 📄 License
+
+This project is for educational and development purposes.
