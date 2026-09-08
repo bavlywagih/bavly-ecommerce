@@ -1,5 +1,5 @@
 "use client";
-import styles from './header/header.module.css';
+import styles from '../css/header.module.css';
 import { TiThMenu } from "react-icons/ti";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useEffect, useState } from 'react';
