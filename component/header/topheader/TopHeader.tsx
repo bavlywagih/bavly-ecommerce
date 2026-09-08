@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './header/header.module.css';
+import styles from '../css/header.module.css';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { PiHeartBold } from "react-icons/pi";
 import { TiShoppingCart } from "react-icons/ti";

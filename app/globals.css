@@ -73,8 +73,9 @@
 
 
 body{
-    background-color: var(--bg-main);
+    background-color: var(--bg-main) !important;
     font-family: "Inter", sans-serif;
+    padding-top: 150px !important;
 }
 
 img{
@@ -105,3 +106,26 @@ a{
     text-decoration: none;
 }
 
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+.btn{
+    padding: 10px 18px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--main_color);
+    color: var(--white_color);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+    width: max-content;
+    border-radius: 30px;
+}
+.btn:hover{
+    scale: 1.1;
+}
