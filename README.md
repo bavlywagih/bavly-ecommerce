@@ -1,200 +1,33 @@
-# 🛒 Bavly Ecommerce
+## Reviewer's Guide
 
-A modern and responsive e-commerce web application built with **Next.js, React, and TypeScript**.
+Adds a Swiper-powered hero carousel with autoplay, looping, pagination, promotional product slides, and shared CTA styling, then integrates it into the home page beneath a refactored fixed Header component.
 
-This project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and is currently under development.
+#### Sequence diagram for the autoplaying hero carousel
 
----
+```mermaid
+sequenceDiagram
+    participant Visitor
+    participant HeroSlider
+    participant Swiper
+    participant Slide
 
-## ✨ Features
-
-- 🛍️ Modern e-commerce interface
-- 📱 Fully responsive design
-- ⚡ Fast and optimized with Next.js
-- 🎨 Clean and modern user interface
-- 🧩 Reusable React components
-- 🔍 SEO-friendly structure
-- 📦 Organized product architecture
-- 🚀 Production-ready Next.js structure
-
----
-
-## 🛠️ Tech Stack
-
-- **Next.js**
-- **React**
-- **TypeScript**
-- **JavaScript**
-- **CSS**
-- **next/font**
-
----
-
-## 📁 Project Structure
-
-```text
-bavly-ecommerce/
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── ...
-│
-├── component/
-│   └── header/
-│
-├── public/
-│   └── img/
-│
-├── package.json
-├── package-lock.json
-├── next.config.ts
-├── tsconfig.json
-├── eslint.config.mjs
-└── README.md
+    Visitor->>HeroSlider: View home page
+    HeroSlider->>Swiper: Render slides with autoplay
+    Swiper->>Slide: Display Xbox Controller slide
+    loop Every 5 seconds
+        Swiper->>Swiper: Advance slide
+        Swiper->>Slide: Display next promotional slide
+    end
+    Visitor->>Swiper: Select pagination control
+    Swiper->>Slide: Display selected slide
 ```
 
----
+### File-Level Changes
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/bavlywagih/bavly-ecommerce.git
-```
-
-### 2. Navigate to the project
-
-```bash
-cd bavly-ecommerce
-```
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-### 4. Start the development server
-
-```bash
-npm run dev
-```
-
-You can also use:
-
-```bash
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+| Change | Details | Files |
+| ------ | ------- | ----- |
+| Introduces a client-side Swiper carousel for featured-product hero promotions. | <ul><li>Adds three promotional slides with product copy, banner imagery, and Shop Now links.</li><li>Configures looping, five-second autoplay, and pagination using Swiper modules.</li><li>Adds responsive-oriented hero, slide content, image, and button styling.</li></ul> | `component/heroSlider/HeroSlider.tsx`<br/>`component/heroSlider/HeroSlider.css`<br/>`package.json`<br/>`package-lock.json` |
+| Integrates the new hero section into the home page alongside a reusable fixed header. | <ul><li>Replaces direct header composition with the new Header wrapper.</li><li>Renders HeroSlider on the home page.</li><li>Updates header component imports after moving files into subdirectories.</li></ul> | `app/page.tsx`<br/>`component/header/header.tsx`<br/>`component/header/BtmHeader.tsx`<br/>`component/header/TopHeader.tsx` |
+| Adds shared layout and CTA styles and adjusts page offset for the fixed header. | <ul><li>Adds a centered, width-constrained container utility.</li><li>Adds reusable rounded button styling with hover scaling.</li><li>Applies a fixed top padding and important background override to the body.</li></ul> | `app/globals.css` |
 
 ---
-
-## ✏️ Development
-
-You can start editing the application by modifying:
-
-```text
-app/page.tsx
-```
-
-The page automatically updates as you edit the source code.
-
----
-
-## 🔧 Available Scripts
-
-### Development
-
-```bash
-npm run dev
-```
-
-Runs the development server.
-
-### Production Build
-
-```bash
-npm run build
-```
-
-Creates an optimized production build.
-
-### Production Server
-
-```bash
-npm start
-```
-
-Runs the application in production mode.
-
-### Lint
-
-```bash
-npm run lint
-```
-
-Checks the project for code-quality and linting issues.
-
----
-
-## 🎨 Fonts
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) for automatic font optimization and loading.
-
----
-
-## 🌐 Deployment
-
-The easiest way to deploy this Next.js application is using **Vercel**, the platform created by the team behind Next.js.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-For more information, check the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
-
----
-
-## 📚 Learn More
-
-To learn more about the technologies used in this project:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Learn Next.js](https://nextjs.org/learn)
-- [React Documentation](https://react.dev/)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-
-You can also check the [Next.js GitHub repository](https://github.com/vercel/next.js).
-
----
-
-## 👨‍💻 Author
-
-### Bavly Wagih
-
-Frontend Developer & Programmer
-
-- GitHub: [@bavlywagih](https://github.com/bavlywagih)
-- LinkedIn: [Bavly Wagih](https://www.linkedin.com/in/bavly-wagih-0a5042366)
-
----
-
-## 📌 Project Status
-
-🚧 **Currently under development**
-
-New features and improvements will be added continuously.
-
----
-
-⭐ If you like this project, consider giving it a **Star** on GitHub.
-
----
-
-## 📄 License
-
-This project is for educational and development purposes.
